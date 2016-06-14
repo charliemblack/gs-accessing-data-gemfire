@@ -5,7 +5,7 @@ import org.springframework.data.annotation.PersistenceConstructor;
 import org.springframework.data.gemfire.mapping.Region;
 
 @Region("hello")
-public class Person {
+public class Person  {
 
     @Id
     public String name;
@@ -15,6 +15,9 @@ public class Person {
     public Person(String name, int age) {
         this.name = name;
         this.age = age;
+    }
+
+    public Person() {
     }
 
     @Override
